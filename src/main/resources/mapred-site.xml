@@ -1,0 +1,7 @@
+<configuration>
+        <property>
+                <name>mapreduce.framework.name</name>
+                <value>yarn</value>
+        </property>
+        <!-- 指定运行mapreduce的环境是Yarn，与hadoop1不同的地方 -->
+</configuration>
