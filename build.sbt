@@ -1,5 +1,5 @@
 
-name := "run-spark"
+name := "spark-tutorial"
 
 version := "0.1"
 

@@ -5,11 +5,15 @@ import org.apache.spark.{SparkConf, SparkContext}
 // https://toutiao.io/posts/ijq61/preview
 object HelloSpark {
 
+  /**
+    * 调用spark集群时需要将bak目录中的配置文件拷贝到resources目录下
+    * @param args
+    */
   def main(args: Array[String]): Unit = {
-//    System.setProperty("hadoop.home.dir","");
-//    System.setProperty("HADOOP_USER_HOME","HDFS")
-//    System.setProperty("HADOOP_USER_NAME","hadoop")
-//    System.setProperty("user.name","hadoop")
+    System.setProperty("hadoop.home.dir","");
+    System.setProperty("HADOOP_USER_HOME","HDFS")
+    System.setProperty("HADOOP_USER_NAME","hadoop")
+    System.setProperty("user.name","hadoop")
     var sparkConf=new SparkConf()
     sparkConf.setAppName("helloSpark").setMaster("spark://node2:7077")
     val sc=new SparkContext(sparkConf)
