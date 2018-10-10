@@ -1,8 +1,6 @@
-package com.liyz.spark
+package com.liyz.spark.starter
 
-import com.liyz.spark.dfToCaseClassByMap.{dfQuestionsCSV, dfTags, toQuestion}
 import org.apache.hadoop.yarn.util.RackResolver
-import org.apache.spark.sql.Dataset
 
 trait Catalogs_Tutorial  extends App with Context {
 

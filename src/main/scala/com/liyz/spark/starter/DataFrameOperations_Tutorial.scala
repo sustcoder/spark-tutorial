@@ -1,5 +1,4 @@
-package com.liyz.spark
-
+package com.liyz.spark.starter
 
 import org.apache.spark.sql.Dataset
 import org.apache.spark.sql.functions.{desc, rand}

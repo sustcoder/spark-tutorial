@@ -1,4 +1,4 @@
-package com.liyz.spark
+package com.liyz.spark.starter
 
 object basicStatisticFun extends Catalogs_Tutorial{
   import org.apache.spark.sql.functions._
@@ -27,11 +27,7 @@ object aggregatesFun extends Catalogs_Tutorial{
 //    .sparkSession.conf.set("retainGroupColumns",false)
     .show()
 }
-import com.liyz.spark.advancedStatFun.dfQuestions
-import org.apache.hadoop.yarn.util.RackResolver
-import org.apache.spark.sql.Row
 import org.apache.spark.sql.functions._
-import org.apache.spark.sql.types.{IntegerType, StringType, StructField, StructType}
 
 
 /**

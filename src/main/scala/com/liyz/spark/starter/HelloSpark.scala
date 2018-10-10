@@ -1,6 +1,7 @@
-package com.liyz.spark
+package com.liyz.spark.starter
 
 import org.apache.spark.{SparkConf, SparkContext}
+
 // https://www.cnblogs.com/frankdeng/p/9301485.html
 // https://toutiao.io/posts/ijq61/preview
 object HelloSpark {

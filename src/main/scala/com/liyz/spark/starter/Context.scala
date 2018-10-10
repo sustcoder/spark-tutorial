@@ -1,4 +1,4 @@
-package com.liyz.spark
+package com.liyz.spark.starter
 
 import org.apache.spark.SparkConf
 import org.apache.spark.sql.SparkSession
