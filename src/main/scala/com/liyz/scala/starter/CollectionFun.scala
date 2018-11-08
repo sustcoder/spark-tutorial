@@ -228,14 +228,14 @@ object ReduceTest extends App{
   println(s"min of seq1: ${seq1.reduce(_.min(_))}")
 //  println(s"numbers of seq1: "+ seq1.reduce( (left, right) => {  left + ", " + right})) // 会报错：类型不匹配，原因： reduce的入参和出参默认是一种类型
   val seq2=Seq("1","2","3","4")
-  println(s"numbers of seq1: "+ seq2.reduce( (left, right) => {  left + ", " + right}))
+  println(s"numbers of seq1: "+ seq2.reduce( (left, right) => {  left + "-" + right}))
   println(s"numbers of seq1 scaned +: ${seq1.scan(0)(_ + _)}") // scan: 累计求和，并将每一步的计算结果记录在数组中返回
   println(s"numbers of seq1 scaned -: ${seq1.scan(0)(_ - _)}") // List(0, -1, -3, -6, -10)
   println(s"numbers of seq1 scaned *: ${seq1.scan(2)(_ * _)}") // List(2, 2, 4, 12, 48)
   println(s"numbers of seq1 scaned min: ${seq1.scan(0)(_ min _)}") // List(0, 0, 0, 0, 0)
   println(s"numbers of seq1 scaned max: ${seq1.scan(0)(_ max _)}") // List(0, 1, 2, 3, 4)
   println(s"numbers of seq1 slice : ${seq1.slice(2,8)}") // List( 3, 4)
-  println(s"numbers of seq2 slice : ${seq2.slice(2,3)}") // List( 3, 4) //  [startIndex,endIndex) 左闭又开
+  println(s"numbers of seq2 slice : ${seq2.slice(2,3)}") // List( 3,) //  [startIndex,endIndex) 左闭又开
 }
 
 /**

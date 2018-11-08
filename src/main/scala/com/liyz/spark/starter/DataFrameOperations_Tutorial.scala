@@ -1,7 +1,7 @@
 package com.liyz.spark.starter
 
 import org.apache.spark.sql.Dataset
-import org.apache.spark.sql.functions.{desc, rand}
+import org.apache.spark.sql.functions.desc
 
 class DataFrameOperations_Tutorial {
 
@@ -193,6 +193,5 @@ object formatColumn extends Catalogs_Tutorial{
     .withColumn("concat",concat_ws(" - ",$"name",$"price"))
     .withColumn("first letter upper",initcap($"name"))
     .show()
-
   df.na.drop().show() // drop row has null
 }

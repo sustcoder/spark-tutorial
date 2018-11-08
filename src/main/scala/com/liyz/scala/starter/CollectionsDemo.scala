@@ -79,6 +79,7 @@ object MapTest1 extends App{
   var map2=map1+("a"->"american")
   var map3=map2-("a")
   var map4=map1++map2
+
 }
 
 
